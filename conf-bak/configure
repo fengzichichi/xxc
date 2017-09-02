@@ -1,0 +1,18 @@
+#!/usr/bin/sh
+cat <<- EOF
+================
+Config for aria2
+================
+EOF
+
+echo "=> Copy config file"
+rm -rf  ~/.aria2/
+mkdir ~/.aria2/
+cp ./.aria2/* ~/.aria2/
+
+cat <<- EOF
+>> The default download path is '/sdcard/Download'
+>> You can change it in '~/.aria2/aria2.conf'
+>> And you can set your own secret token (Recommended)
+>> Now you can run 'aria2c'
+EOF
